@@ -7,6 +7,7 @@
     <title>construction</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/construction.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -115,9 +116,9 @@
                     <h3>Our Best Engineers</h3>
                     <p>Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary.</p>
                 </div>
-                <div class="e_content">
-                    <ul>
-                        <li>
+                <div class="e_content swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
                             <a href="#">
                                 <div class="top">
                                     <img src="img/star.png" alt="star">
@@ -134,7 +135,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <a href="#">
                                 <div class="top">
                                     <img src="img/star.png" alt="star">
@@ -151,7 +152,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <a href="#">
                                 <div class="top">
                                     <img src="img/star.png" alt="star">
@@ -168,14 +169,53 @@
                                 </div>
                             </a>
                         </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="top">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/more.png" alt="more">
+                                </div>
+                                <div class="middle">
+                                    <img src="img/engineer3.png" alt="Adam Gates">
+                                    <span>Adam Gates</span>
+                                    <p>Michigan, TX</p>
+                                </div>
+                                <div class="bottom">
+                                    <p class="e_number">989-653-2986</p>
+                                    <p class="e_email">adamgates@const.com</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="top">
+                                    <img src="img/star.png" alt="star">
+                                    <img src="img/more.png" alt="more">
+                                </div>
+                                <div class="middle">
+                                    <img src="img/engineer3.png" alt="Adam Gates">
+                                    <span>Adam Gates</span>
+                                    <p>Michigan, TX</p>
+                                </div>
+                                <div class="bottom">
+                                    <p class="e_number">989-653-2986</p>
+                                    <p class="e_email">adamgates@const.com</p>
+                                </div>
+                            </a>
+                        </li>
+
+
                     </ul>
                 </div>
                 <div class="e_btn">
-                    <div class="prev"><a href="#">←</a></div>
-                    <div class="next"><a href="#">→</a></div>
+                    <div class="prev swiper-button-prev">←</div>
+                    <div class="next swiper-button-next">→</div>
                 </div>
             </div>
+
+            
             <!-- Our best engineers -->
+            
 
             <div id="article4">
                 <div class="m_content">     
@@ -200,7 +240,7 @@
                     </div>
                     <div class="c_content">
                         <div class="c_form">
-                            <form name="contact" action="index.html" method="post">
+                            <form name="contact" action="#" method="post">
                                 <fieldset>
                                     <legend>name</legend>
                                     <input type="text" name="name" id="name" placeholder="Maya">
@@ -227,21 +267,44 @@
                         <li>
                             <a href="#">
                                 Unleash Your Creativity
-                                <span>Nine for Mortal Men, doomed to die, One for</span>
                             </a>
+                            <p>Nine for Mortal Men, doomed to die, One for</p>
                         </li>
                         <li>
                             <a href="#">
                                 Unleash Your Creativity
-                                <span>Nine for Mortal Men, doomed to die, One for</span>
-                                <div class="b_btn">Read more</div>
                             </a>
+                            <p>Nine for Mortal Men, doomed to die, One for</p>
+                            <div class="b_btn">Read more</div>
                         </li>
+                        <li>
+                            <a href="#">
+                                Unleash Your Creativity
+                            </a>
+                            <p>Nine for Mortal Men, doomed to die, One for</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Unleash Your Creativity
+                            </a>
+                            <p>Nine for Mortal Men, doomed to die, One for</p>
+                            <div class="b_btn">Read more</div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Unleash Your Creativity
+                            </a>
+                            <p>Nine for Mortal Men, doomed to die, One for</p>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Unleash Your Creativity
+                            </a>
+                            <p>Nine for Mortal Men, doomed to die, One for</p>
+                            <div class="b_btn">Read more</div>
+                        </li>
+
                     </ul>
-                    <div class="content_bar">
-                        <div class="bar"></div>
-                        <div class="pointer"></div>
-                    </div>
                 </div>
             </div>
             <!-- Lattest blogs -->
@@ -291,10 +354,13 @@
                             <a href="#">Get In Touch</a>
                             <ul class="site_content">
                                 <li>
-                                    <a href="#">Enter your mail</a>
-                                    <span class="material-symbols-outlined">
-                                        arrow_circle_right
-                                    </span>
+                                    <input type="text" placeholder="Enter your mail">
+                                    <button type="submit">
+                                        <span class="material-symbols-outlined">
+                                            arrow_circle_right
+                                        </span>
+                                    </button>
+                                    
                                 </li>
                             </ul>
                         </li>
@@ -305,5 +371,20 @@
             <p>Copyright construction.com, All rights reserved.</p>
         </footer>
     </div><!-- wrap -->
+
+    <script src="js/swiper.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper',{
+          slidesPerView: 3,
+          spaceBetween: 34,
+          loop: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>
+
+    
 </body>
 </html>
