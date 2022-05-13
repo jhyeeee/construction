@@ -332,8 +332,10 @@ header{
 .e_content{
     width: 100%;
     margin: 80px 0;
+    overflow: hidden;
 }
 .e_content ul{
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -399,6 +401,7 @@ header{
     font-size: 25px;
     font-weight: 600;
     text-align: center;
+    cursor: pointer;
 }
 .e_btn .prev{
     color: #313131;
@@ -532,17 +535,18 @@ header{
     background: #f9f9f9;
     border: none;
     border-radius: 7px;
+    padding: 15px 10px;
+    box-sizing: border-box;
 }
 .c_form #textarea::placeholder{
-    text-indent: 24px;
+    text-indent: 14px;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    padding-top: 10px;
+    
 }
 .c_form #textarea:focus{
     box-sizing: border-box;
-    padding: 10px;
-    text-indent: 24px;
+    text-indent: 14px;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     outline: none;
@@ -588,23 +592,37 @@ header{
     color: #6b6b6b;
 }
 .b_content{
-    display: flex;
-    justify-content: space-between;
+    width: 1153px;
+    height: 467px;
     margin-top: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.b_content::-webkit-scrollbar{
+    width: 6px;
+}
+.b_content::-webkit-scrollbar-thumb{
+    background: #40A2D5;
+}
+.b_content::-webkit-scrollbar-track{
+    width: 2px;
+    background: #cbcbcb;
+
 }
 .b_content ul{
-    width: 1052px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .b_content ul li{
     width: 496px;
-    height: 467px; 
+    height: 467px;
+    margin: 0px 40px 20px 20px; 
 }
-.b_content ul li:nth-child(1){
+.b_content ul li:nth-child(2n-1){
     background-image: url(../img/blog_img1.jpg);
 }
-.b_content ul li:nth-child(2){
+.b_content ul li:nth-child(2n){
     background-image: url(../img/blog_img2.jpg);
 }
 .b_content ul li a{
@@ -616,17 +634,18 @@ header{
     display: block;
     color:#fff;
 }
-.b_content ul li:nth-child(1) a{
+.b_content ul li:nth-child(2n-1) a{
     margin-top: 320px;
 }
-.b_content ul li:nth-child(2) a{
+.b_content ul li:nth-child(2n) a{
     margin-top: 230px;
 }
-.b_content ul li a span{
-    display: block;
+.b_content ul li p{
+    margin: 20px 0;
     font-size: 14px;
     font-weight: 400;
-    margin: 20px 0;
+    text-align: center;
+    color: #fff;
 }
 .b_btn{
     width: 202px;
@@ -637,24 +656,10 @@ header{
     border-radius: 40px 5px;
     font-size: 17px;
     letter-spacing: -0.5px;
+    text-align: center;
+    color: #fff;
 }
-.content_bar{
-    position: relative;
-}
-.content_bar .bar{
-    width: 2px;
-    height: 467px;
-    background: #cbcbcb;
-}
-.content_bar .pointer{
-    position: absolute;
-    top:120px;
-    right:-4px;
-    width: 9px;
-    height: 53px;
-    background: #40A2D5;
 
-}
 #article7{
     margin: 150px 0;
     width: 1440px;
@@ -730,22 +735,38 @@ footer{
 .f_site .site_content{
     margin-top: 30px;
 }
-.f_site .site_content li{
+.site_content li{
+    width: 174px;
     height: 40px;
     line-height: 40px;
 }
-.f_site .site_content li a{
+.site_content li a{
+    display: block;
     font-size: 16px;
     color: #6b6b6b;
 }
-.f_site .site_content li:last-child{
+.site_content li:last-child{
     width: 174px;
     display: flex;
     justify-content: space-between;
 }
-.f_site .site_content li:last-child a{
-    display: block;
+.site_content li:last-child input{
     width: 150px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    border: 0;
+    background: #fafafa;
+}
+.site_content li:last-child input:focus{
+    outline: none;
+}
+.site_content li:last-child input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+.site_content li:last-child button{
+    background: #fafafa;
+    border: 0;
 }
 .material-symbols-outlined{
     color: #40A2D5;
