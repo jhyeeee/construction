@@ -22,7 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.navi h2 a{
+.navi h1 a{
     font-size: 25px;
     font-weight: 600;
     color: #40A2D5;
@@ -706,7 +706,7 @@ footer{
     display: flex;
     justify-content: space-between;
 }
-.f_link h2 a{
+.f_link h1 a{
     font-size: 25px;
     font-weight: 600;
     color: #40A2D5;
