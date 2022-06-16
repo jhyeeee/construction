@@ -39,6 +39,10 @@ header{
     display: block;
     color: #fff;
 }
+.gnb ul li a:hover{
+    font-weight: bold;
+    transition: all 0.2s;
+}
 .gnb ul li:hover a::after{
     position: absolute;
     bottom:-20%;
@@ -339,6 +343,9 @@ header{
     display: flex;
     justify-content: space-between;
 }
+.swiper-slide{
+    width: 362px;
+}
 .e_content ul li{
     width: 362px;
     padding: 30px;
@@ -406,13 +413,21 @@ header{
 .e_btn .prev{
     color: #313131;
 }
-.e_btn .prev a{
-    display: block;
-}
-.e_btn .next{
+.e_btn .prev:hover{
     border-radius: 50%;
     background: #40a2d5;
     color: #fff;
+    transition: all 0.2s ease-out;
+}
+.e_btn .prev a{
+    display: block;
+}
+.e_btn .next:hover{
+    border-radius: 50%;
+    background: #40a2d5;
+    color: #fff;
+    transition: all 0.2s ease-out;
+
 }
 .e_btn .next a{
     display: block;
